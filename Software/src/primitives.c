@@ -1,0 +1,3 @@
+#include "primitives.h"
+
+uint32_t volatile frame_buffer[CUBE_WIDTH] = { 0x0, 0x0, 0x0, 0x0, 0x0};
