@@ -2,6 +2,7 @@
 #define _VOXEL_H
 
 #include <stdint.h>
+#include <string.h>
 
 #define ON 1
 #define OFF 0
@@ -13,6 +14,10 @@ extern volatile uint32_t frame_buffer[CUBE_WIDTH];
 #define LED_INDEX(x,y) ((x) + (y) *  CUBE_WIDTH)
 
 #define LED_MASK(x,y) (0x1UL << LED_INDEX((x), (y)))
+
+static inline void clear_all(void) {
+	memset((void*)frame_buffer, 0, CUBE_WIDTH * sizeof(uint32_t));
+}
 
 static inline void set_voxel_index(uint8_t i, uint8_t z, uint8_t state) {
     if(state) 

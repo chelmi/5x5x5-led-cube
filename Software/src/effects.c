@@ -49,33 +49,6 @@ void chenillard_z(uint8_t iteration, uint16_t delay_value) {
   }
 }
 
-void draw_square(uint8_t z, uint8_t state) {
-  line_yz(0, z, state);
-  line_yz(4, z, state);
-  line_xz(0, z, state);
-  line_xz(4, z, state);
-}
-
-void cube_expand(uint8_t iteration, uint16_t delay_value) {
-  for(uint8_t iter = 0; iter < iteration; iter++) {
-    draw_square(0, ON);
-    for(uint8_t z = 1; z < CUBE_WIDTH; z++) {
-      draw_square(z, ON);
-      line(0, 0, 1, 0, 0, 1, z - 1, ON);
-      line(0, 4, 1, 0, 0, 1, z - 1, ON);
-      line(4, 0, 1, 0, 0, 1, z - 1, ON);
-      line(4, 4, 1, 0, 0, 1, z - 1, ON);
-      delay(delay_value);
-      draw_square(z, OFF);
-    }
-    for(int8_t z = CUBE_WIDTH - 1; z >= 0 ; z --) {
-      draw_square(z, ON);
-      delay(delay_value);
-      draw_square(z, OFF);
-    }
-  }
-}
-
 void rain(uint16_t delay_value) {
   srand(12355);
   

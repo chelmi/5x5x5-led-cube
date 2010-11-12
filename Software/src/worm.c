@@ -15,6 +15,8 @@
 #define FORWARD  4
 #define BACKWARD 5
 
+#define OPPOSITE_DECISION(x) ((x)^0x1)
+
 #define DEFAULT_DECISION_TTL 3
 
 typedef struct {
@@ -148,6 +150,10 @@ uint8_t get_next_decision(uint8_t bad_decisions[NB_DECISIONS], worm_t * worm)
   for(int i = 0; i < NB_DECISIONS; i++) {
     if(bad_decisions[i] == 0) {
       good_decisions[gd_index++] = i;
+    } else {
+    	if(!bad_decisions[OPPOSITE_DECISION(i)]) {
+    		good_decisions[gd_index++] = OPPOSITE_DECISION(i);
+    	}
     }
   } 
  

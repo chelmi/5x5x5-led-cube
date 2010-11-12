@@ -191,11 +191,11 @@ int main(void) {
 
   //rain(T_1S);
 
-  /*up_and_down(20, T_50MS);
-  cube_expand(2, T_100MS);
-  chenillard_z(2 , T_50MS);*/
+  //up_and_down(20, T_50MS);
+  cube_expand(10, T_125MS);
+  //chenillard_z(2 , T_50MS);
 
-  worm(1000, T_50MS);
+  //worm(1000, T_50MS);
   
   while(1) {
     
