@@ -34,4 +34,26 @@ static inline void shift_down(void) {
     }
 }
 
+static inline void rotate_right_stepA(void) {
+	for(uint8_t layer_index = 0; layer_index < CUBE_WIDTH; layer_index++) {
+		uint32_t layer = frame_buffer[layer_index];
+		uint32_t l = layer & 0x739c0;
+		l |= (layer & 0xf) << 1;
+		l |= (layer & 0x1e00000) >> 1;
+		l |= (layer & 0x84210) << 5;
+		frame_buffer[layer_index] = l | ((layer & 0x108420) >> 5);
+	}
+}
+
+static inline void rotate_right_stepB(void) {
+	for(uint8_t layer_index = 0; layer_index < CUBE_WIDTH; layer_index++) {
+		uint32_t layer = frame_buffer[layer_index];
+		uint32_t l = layer & 0x1000;
+		l |= (layer & 0xcf) << 1;
+		l |= (layer & 0x1e60000) >> 1;
+		l |= (layer & 0x86310) << 5;
+		frame_buffer[layer_index] = l | ((layer & 0x118c20) >> 5);
+	}
+}
+
 #endif

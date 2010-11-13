@@ -28,8 +28,9 @@
 <inputType id="de.innot.avreclipse.tool.assembler.input.1237107822" superClass="de.innot.avreclipse.tool.assembler.input"/>
 </tool>
 <tool id="de.innot.avreclipse.tool.compiler.winavr.base.1425193041" name="AVR Compiler" superClass="de.innot.avreclipse.tool.compiler.winavr.base">
-<option id="de.innot.avreclipse.compiler.option.incpath.1554037758" superClass="de.innot.avreclipse.compiler.option.incpath" valueType="includePath">
+<option id="de.innot.avreclipse.compiler.option.incpath.1554037758" name="Include Paths (-I)" superClass="de.innot.avreclipse.compiler.option.incpath" valueType="includePath">
 <listOptionValue builtIn="false" value="/usr/lib/avr/include"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/led-cube-firmware/include}&quot;"/>
 </option>
 <inputType id="de.innot.avreclipse.compiler.winavr.input.892543848" name="C Source Files" superClass="de.innot.avreclipse.compiler.winavr.input"/>
 </tool>
@@ -39,6 +40,10 @@
 <tool id="de.innot.avreclipse.tool.archiver.winavr.base.423244719" name="AVR Archiver" superClass="de.innot.avreclipse.tool.archiver.winavr.base"/>
 </toolChain>
 </folderInfo>
+<sourceEntries>
+<entry excluding="src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+</sourceEntries>
 </configuration>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>

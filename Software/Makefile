@@ -1,7 +1,7 @@
 
 
 #program
-SRC = src/main.c src/delay.c src/primitives.c src/effects.c src/worm.c src/cube_expand.c
+SRC = src/main.c src/delay.c src/primitives.c src/effects.c src/worm.c src/cube_expand.c src/spiral.c
 INCLUDE_DIR = include
 TARGET = test
 MCU = atmega168
