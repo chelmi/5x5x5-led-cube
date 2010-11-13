@@ -3,6 +3,7 @@
 #include <stdint.h>
 
 #define T_50MS  781
+#define T_75MS  1172
 #define T_100MS 1562
 #define T_125MS 1953
 #define T_250MS 3906

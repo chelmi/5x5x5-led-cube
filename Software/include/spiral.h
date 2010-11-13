@@ -10,6 +10,6 @@
 
 #include <stdint.h>
 
-void spiral(uint8_t iteration, uint16_t delay_value);
+void spiral(uint8_t iteration, uint8_t nb_rot, uint16_t delay_value);
 
 #endif /* SPIRAL_H_ */

@@ -195,7 +195,7 @@ int main(void) {
   //cube_expand(10, T_125MS);
   //chenillard_z(2 , T_50MS);
   //worm(1000, T_50MS);
-  spiral(128, T_50MS);
+  spiral(4, 2, T_50MS);
   
   while(1) {
     
