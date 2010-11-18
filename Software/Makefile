@@ -1,7 +1,7 @@
 
 
 #program
-SRC = src/main.c src/delay.c src/primitives.c src/effects.c src/worm.c src/cube_expand.c src/spiral.c
+SRC = src/main.c src/delay.c src/primitives.c src/effects.c src/worm.c src/cube_expand.c src/spiral.c src/star.c
 INCLUDE_DIR = include
 TARGET = test
 MCU = atmega168
@@ -25,7 +25,7 @@ NM = avr-nm
 
 FORMAT = ihex
 
-CFLAGS = -I$(INCLUDE_DIR) -O2 -std=gnu99 -Wall -Wstrict-prototypes -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums  -mmcu=$(MCU) -DF_CPU=$(F_CPU)
+CFLAGS = -I$(INCLUDE_DIR) -Os -std=gnu99 -Wall -Wstrict-prototypes -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums  -mmcu=$(MCU) -DF_CPU=$(F_CPU)
 
 LDFLAGS =
 

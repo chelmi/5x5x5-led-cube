@@ -39,97 +39,97 @@ void spiral(uint8_t iteration, uint8_t nb_rot, uint16_t delay_value)
 	for(uint8_t i = 0; i < iteration; i++) {
 		for(uint8_t r = 0; r < nb_rot; r++) {
 				delay(delay_value);
-				rotate_right_stepB();
+				rotate_cw_stepB();
 				delay(delay_value);
-				rotate_right_stepA();
+				rotate_cw_stepA();
 				delay(delay_value);
-				rotate_right_stepA();
+				rotate_cw_stepA();
 				delay(delay_value);
-				rotate_right_stepB();
+				rotate_cw_stepB();
 		}
 
 		delay(delay_value);
-		rotate_layer_right_stepB(0);
+		rotate_cw_stepB_z(0);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(0);
-		rotate_layer_right_stepA(1);
+		rotate_cw_stepA_z(0);
+		rotate_cw_stepA_z(1);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(0);
-		rotate_layer_right_stepA(1);
-		rotate_layer_right_stepA(2);
+		rotate_cw_stepA_z(0);
+		rotate_cw_stepA_z(1);
+		rotate_cw_stepA_z(2);
 
 		delay(delay_value);
-		rotate_layer_right_stepB(0);
-		rotate_layer_right_stepB(1);
-		rotate_layer_right_stepB(2);
-		rotate_layer_right_stepB(3);
+		rotate_cw_stepB_z(0);
+		rotate_cw_stepB_z(1);
+		rotate_cw_stepB_z(2);
+		rotate_cw_stepB_z(3);
 
 		delay(delay_value);
-		rotate_layer_right_stepB(0);
+		rotate_cw_stepB_z(0);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(0);
-		rotate_layer_right_stepA(1);
+		rotate_cw_stepA_z(0);
+		rotate_cw_stepA_z(1);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(0);
-		rotate_layer_right_stepA(1);
-		rotate_layer_right_stepA(2);
+		rotate_cw_stepA_z(0);
+		rotate_cw_stepA_z(1);
+		rotate_cw_stepA_z(2);
 
 		delay(delay_value);
-		rotate_layer_right_stepB(0);
-		rotate_layer_right_stepB(1);
-		rotate_layer_right_stepB(2);
-		rotate_layer_right_stepB(3);
+		rotate_cw_stepB_z(0);
+		rotate_cw_stepB_z(1);
+		rotate_cw_stepB_z(2);
+		rotate_cw_stepB_z(3);
 
 		for(uint8_t r = 0; r < nb_rot; r++) {
 				delay(delay_value);
-				rotate_right_stepB();
+				rotate_cw_stepB();
 				delay(delay_value);
-				rotate_right_stepA();
+				rotate_cw_stepA();
 				delay(delay_value);
-				rotate_right_stepA();
+				rotate_cw_stepA();
 				delay(delay_value);
-				rotate_right_stepB();
+				rotate_cw_stepB();
 		}
 
 		delay(delay_value);
-		rotate_layer_right_stepB(4);
+		rotate_cw_stepB_z(4);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(4);
-		rotate_layer_right_stepA(3);
+		rotate_cw_stepA_z(4);
+		rotate_cw_stepA_z(3);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(4);
-		rotate_layer_right_stepA(3);
-		rotate_layer_right_stepA(2);
+		rotate_cw_stepA_z(4);
+		rotate_cw_stepA_z(3);
+		rotate_cw_stepA_z(2);
 
 		delay(delay_value);
-		rotate_layer_right_stepB(4);
-		rotate_layer_right_stepB(3);
-		rotate_layer_right_stepB(2);
-		rotate_layer_right_stepB(1);
+		rotate_cw_stepB_z(4);
+		rotate_cw_stepB_z(3);
+		rotate_cw_stepB_z(2);
+		rotate_cw_stepB_z(1);
 
 		delay(delay_value);
-		rotate_layer_right_stepB(4);
+		rotate_cw_stepB_z(4);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(4);
-		rotate_layer_right_stepA(3);
+		rotate_cw_stepA_z(4);
+		rotate_cw_stepA_z(3);
 
 		delay(delay_value);
-		rotate_layer_right_stepA(4);
-		rotate_layer_right_stepA(3);
-		rotate_layer_right_stepA(2);
+		rotate_cw_stepA_z(4);
+		rotate_cw_stepA_z(3);
+		rotate_cw_stepA_z(2);
 
 		delay(delay_value);
-		rotate_layer_right_stepB(4);
-		rotate_layer_right_stepB(3);
-		rotate_layer_right_stepB(2);
-		rotate_layer_right_stepB(1);
+		rotate_cw_stepB_z(4);
+		rotate_cw_stepB_z(3);
+		rotate_cw_stepB_z(2);
+		rotate_cw_stepB_z(1);
 	}
 }
 
